@@ -1,0 +1,34 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+article > p{
+    margin: 20px;
+}
+
+footer{
+    position: relative;
+    width: auto;
+    margin-top: 10px;
+}
+
+
+@media screen and (max-width: 375px) and (orientation: portrait) {
+    article {
+        margin: 0;
+    }
+    article > p{
+        text-align: justify;
+    }
+}

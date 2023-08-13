@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f2f2f2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+article {
+  width: calc(100% - 40px);
+  max-width: 800px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+article h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+article p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.article-link{
+  text-decoration: none;
+  color: inherit;
+}
+.article-link:hover article{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 375px) and (orientation: portrait) {
+  header {
+    flex-direction: column;
+  }
+  header span{
+    display: none;
+  }
+  
+  nav{
+    font-size: x-large;
+  }
+
+  article p{
+    font-size: large;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#cookie-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 9999;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.cookie-message {
+  margin-bottom: 10px;
+}
+
+.cookie-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.cookie-buttons button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cookie-accept {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.cookie-decline {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.cookie-decline:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.cookie-accept:hover {
+  background-color: #0056b3;
+}
